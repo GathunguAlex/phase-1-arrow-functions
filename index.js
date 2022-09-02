@@ -1,12 +1,20 @@
-receivesAFunction (function() {
- return a();});
-
-
-returnsANamedFunction() {
- return a();
+//receivesAFunction
+function divide(a, b){
+ a = 50;
+ b = 2;
+ return a / b;
 }
 
-returnsAnAnonymousFunction()({
- return function ();
-});
 
+//returnsANamedFunction
+const sq = function (c) {
+ c = 4;
+ let x;
+ x = 2;
+ return x * c;
+ }
+
+//returnsAnAnonymousFunction
+const multi = function (d, e) {
+ return d * e;
+}
